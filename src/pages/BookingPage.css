@@ -1,0 +1,226 @@
+.booking-page {
+    min-height: 100vh;
+    background-color: var(--primary-blue);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Booking form container */
+.booking-container {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    width: 100%;
+    max-width: 600px;
+    padding: 2rem;
+    margin: 2rem auto;
+}
+
+/* Header styles */
+.booking-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.booking-header h1 {
+    color: var(--dark-gray);
+    font-size: 2rem;
+    margin: 0;
+}
+
+/* Property summary section */
+.property-summary {
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.property-summary img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.property-summary h2 {
+    color: var(--dark-gray);
+    margin: 1rem 0;
+}
+
+.property-summary .property-price {
+    color: var(--secondary-blue);
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+}
+
+/* Form styles */
+.booking-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: var(--dark-gray);
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1rem;
+    width: 100%;
+    background-color: var(--white);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: var(--secondary-blue);
+    box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.1);
+}
+
+/* Button styles */
+.booking-button {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+.booking-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Success message styles */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.success-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--white);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    max-width: 400px;
+    width: 90%;
+    z-index: 1000;
+}
+
+.success-icon {
+    width: 60px;
+    height: 60px;
+    background-color: #e6ffe6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1rem;
+}
+
+.success-icon svg {
+    width: 30px;
+    height: 30px;
+    color: #008000;
+}
+
+.success-message h2 {
+    color: var(--dark-gray);
+    margin: 1rem 0;
+}
+
+.success-message p {
+    color: var(--dark-gray);
+    margin: 0.5rem 0;
+}
+
+.back-to-dashboard {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.back-to-dashboard:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .booking-page {
+        padding: 1rem;
+    }
+
+    .booking-container {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .property-summary img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 480px) {
+    .booking-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .property-summary {
+        padding: 1rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        padding: 0.6rem;
+    }
+}

@@ -1,0 +1,75 @@
+.booking-management {
+    padding: 1rem;
+}
+
+.bookings-table {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    margin-top: 1rem;
+}
+
+.bookings-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bookings-table th,
+.bookings-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
+
+.bookings-table th {
+    background-color: var(--light-gray);
+    font-weight: 600;
+}
+
+.status-select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.status-select.pending {
+    background-color: #fff3e6;
+    color: #cc7000;
+}
+
+.status-select.confirmed {
+    background-color: #e6ffe6;
+    color: #008000;
+}
+
+.status-select.cancelled {
+    background-color: #ffe6e6;
+    color: #cc0000;
+}
+
+.status-select.completed {
+    background-color: #e6f3ff;
+    color: var(--secondary-blue);
+}
+
+.view-details-btn {
+    background-color: var(--secondary-blue);
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.view-details-btn:hover {
+    opacity: 0.9;
+}
+
+.empty-message {
+    text-align: center;
+    padding: 2rem;
+    color: var(--dark-gray);
+}

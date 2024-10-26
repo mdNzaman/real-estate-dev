@@ -1,0 +1,60 @@
+# Register
+POST http://localhost:5000/api/auth/register
+{
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "password123",
+  "phone": "1234567890"
+}
+
+# Login
+POST http://localhost:5000/api/auth/login
+{
+  "email": "john@example.com",
+  "password": "password123"
+}
+
+//Create Property
+POST /api/properties
+Headers:
+  Authorization: Bearer your_token
+Body:
+{
+  "title": "Modern Apartment",
+  "description": "Beautiful modern apartment...",
+  "price": 250000,
+  "address": "123 Main St",
+  "city": "New York",
+  "state": "NY",
+  "zip_code": "10001",
+  "property_type": "apartment",
+  "status": "for_sale",
+  "bedrooms": 2,
+  "bathrooms": 2,
+  "area": 1200,
+  "features": ["Pool", "Gym", "Parking"],
+  "images": [
+    "https://example.com/image1.jpg",
+    "https://example.com/image2.jpg"
+  ]
+}
+
+// Get All Properties
+GET /api/properties
+
+// Get Property by ID
+GET /api/properties/1
+
+// Update Property
+PUT /api/properties/1
+Headers:
+  Authorization: Bearer your_token
+Body: // Same as create
+
+// Delete Property
+DELETE /api/properties/1
+Headers:
+  Authorization: Bearer your_token
+
+// Search Properties
+GET /api/properties/search?keyword=modern&city=New York&minPrice=200000&maxPrice=300000
