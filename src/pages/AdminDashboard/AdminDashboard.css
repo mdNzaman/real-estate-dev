@@ -1,0 +1,44 @@
+.admin-dashboard {
+    display: flex;
+    min-height: 100vh;
+    background-color: var(--primary-blue);
+}
+
+.admin-sidebar {
+    width: 250px;
+    background-color: var(--white);
+    padding: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.admin-nav button {
+    padding: 1rem;
+    text-align: left;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: var(--dark-gray); /* Added this line to make text color black */
+}
+
+.admin-nav button:hover {
+    background-color: var(--light-gray);
+}
+
+.admin-nav button.active {
+    background-color: var(--secondary-blue);
+    color: var(--white); /* This ensures active button text stays white */
+}
+
+.admin-content {
+    flex: 1;
+    padding: 2rem;
+}

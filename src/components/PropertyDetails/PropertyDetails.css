@@ -1,0 +1,137 @@
+.property-details-container {
+    padding: 2rem;
+    background-color: var(--primary-blue);
+    min-height: 100vh;
+}
+
+.property-details-card {
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.property-header {
+    position: relative;
+    height: 400px;
+}
+
+.property-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-info {
+    padding: 2rem;
+}
+
+.property-title-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.property-price {
+    font-size: 1.8rem;
+    color: var(--secondary-blue);
+    font-weight: bold;
+}
+
+.property-status-badge {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.status-available {
+    background-color: #e6ffe6;
+    color: #008000;
+}
+
+.status-pending {
+    background-color: #fff3e6;
+    color: #cc7000;
+}
+
+.property-details-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    margin: 2rem 0;
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+}
+
+.detail-item {
+    text-align: center;
+}
+
+.detail-item h4 {
+    color: var(--dark-gray);
+    margin-bottom: 0.5rem;
+}
+
+.detail-item p {
+    font-size: 1.2rem;
+    color: var(--secondary-blue);
+    font-weight: 500;
+}
+
+.amenities-section {
+    margin: 2rem 0;
+}
+
+.amenities-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.amenity-item {
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: var(--light-gray);
+    border-radius: 4px;
+}
+
+.booking-section {
+    padding: 2rem;
+    background-color: var(--light-gray);
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+.book-now-button {
+    background-color: var(--secondary-blue);
+    color: var(--white);
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: var(--transition);
+    width: 100%;
+}
+
+.book-now-button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+.location-section {
+    margin: 2rem 0;
+}
+
+.description-section {
+    margin: 2rem 0;
+    line-height: 1.6;
+}

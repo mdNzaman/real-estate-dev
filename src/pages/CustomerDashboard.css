@@ -1,0 +1,57 @@
+.dashboard {
+    padding: 2rem;
+    background-color: var(--primary-blue);
+    min-height: 100vh;
+}
+
+.dashboard-header {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.filters-section {
+    background-color: var(--white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: var(--box-shadow);
+}
+
+.filters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-item label {
+    margin-bottom: 0.5rem;
+    color: var(--dark-gray);
+}
+
+.filter-item input,
+.filter-item select {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.clear-filters {
+    background-color: var(--light-gray);
+    color: var(--dark-gray);
+    margin-right: 1rem;
+}
